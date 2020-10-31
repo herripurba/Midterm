@@ -11,16 +11,14 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 
 Route::get('/', 'AuthController@login')->name('login');
 Route::post('/postlogin', 'AuthController@postlogin');
 Route::get('/logout', 'AuthController@logout');
 
 Route::get('/registration', 'RegisController@create');
+
+
 Route::group(['middleware' => 'auth'],function(){
     Route::get('/dashboard', 'DashboardController@index');
     Route::get('/teacher', 'TeachersController@index');

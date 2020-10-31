@@ -37,7 +37,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="/login"><i class="lnr lnr-home"></i> <span>Back to Login</span></a></li>
+						<li><a href="/"><i class="lnr lnr-home"></i> <span>Back to Login</span></a></li>
 				</nav>
 			</div>
 		</div>

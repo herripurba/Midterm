@@ -25,6 +25,6 @@ class AuthController extends Controller
     {
         // dd($request->all());
         Auth::logout();
-        return redirect('/');
+        return redirect()->route('login');
     }
 }
